@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Repository data @ firebase</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>
+            Repository data @ firebase
+            <br />
+            <small>
+                <em>Novatechset</em>
+            </small>
+        </h1>
+        <ul id="userList"></ul>
+        <div id="userDetail">
+            <p>
+                Name :
+                <strong class="detailName"></strong>
+            </p>
+            <p>
+                Age:
+                <strong class="detailAge"></strong>
+            </p>
+            <p>
+                Email:
+                <strong class="detailEmail"></strong>
+            </p>
+        </div>
+  <!-- add user module -->
+<section id="add-user-module" >
+  <button id="open-add-user-form-btn">+</button>
+  <form>
+    <h2>Add User</h2>
+    name:<br>
+    <input type='text' data-key='name' class='user-input'><br>
+    age:<br>
+    <input type='text' data-key='age' class='user-input'><br>
+    email:<br>
+    <input type='text' data-key='email' class='user-input'><br>
+    <button type='button' id="add-user-btn">add user</button>
+ </form>
+</section>
+
+
+
+<!-- edit user module -->
+ <section id="edit-user-module">
+ <form>
+ <h2>Edit user</h2>
+ <input type="hidden" class="edit-userid">
+ name:<br>
+ <input type='text' data-key='name' class='edit-user-input'><br>
+ age:<br>
+ <input type='text' data-key='age' class='edit-user-input'><br>
+ email:<br>
+ <input type='text' data-key='email' class='edit-user-input'><br>
+ <button type='button' id="edit-user-btn">save</button>
+ </form>
+ </section>
+ 
+ 
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
